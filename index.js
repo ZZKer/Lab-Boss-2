@@ -4,10 +4,17 @@
  * @title Lab Boss 2
  * @author ZZKer
  * @desc Lab Boss-Stage 2
- * @version 1.02
+ * @version 1.02b
  * 
  * Messing around with the Chords program,
  * I ended up making some boss music.
+ * 
+ *  Thank you to grifdail who featured my 
+ * song in the position module. Expect a
+ * version of this song that uses positional
+ * audio in the future.
+ * You can find that module at:
+ *      'grifdail/position'
  */
 
 //needed for the notes
@@ -87,7 +94,7 @@ export function dsp(t) {
   return v * final;
 }
 
-//Thank you, cherry, for explaining what this does
+//Thank you, cheery, for explaining what this does
 //Thank you, stagas, for letting me copy it over from the example
 //(it's for octives)
 function oct(x){
@@ -99,7 +106,7 @@ function oct(x){
 /**
  * CHANGE LOG
  * v1.02:
- *  - Fixed comment on oct function. Sorry, Cherry.
+ *  - Fixed comment on oct function. Sorry, cheery.
  *    (love that new track you're working on, btw)
  *  - Fixed some spelling errors
  *  - Changed volumes to make up for additions
@@ -107,6 +114,9 @@ function oct(x){
  *    - urgent note from .33 to .43
  *    - machine noise from .2 to .25
  *  - Added high-hats and barely audible drum
+ * b:
+ *  - Fixed more spelling mistakes
+ *  - Added a thank you to grifdail
  * 
  * v1.01:
  *  - Fixed volume of backing chords to be consistent
