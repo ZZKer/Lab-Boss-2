@@ -4,7 +4,7 @@
  * @title Lab Boss 2
  * @author ZZKer
  * @desc Lab Boss-Stage 2
- * @version 1.03
+ * @version 1.03b
  *  You can find the Version Change Log at the bottom
  * 
  * Messing around with the Chords program,
@@ -156,16 +156,16 @@ machseq.add(function(t){
 //our main function
 export function dsp(t) {
   //background notes
-  var final = baseseq.play(t);
+  var final = baseseq.simpleplay(t);
   
   //urgent notes
-  final += upperseq.play(t);
+  final += upperseq.simpleplay(t);
   
   //high hats and drums
-  final += hatseq.play(t);
+  final += hatseq.simpleplay(t);
   
   //machine noises using layered osc
-  final += machseq.play(t);
+  final += machseq.simpleplay(t);
   
   return v * final;
 }
@@ -191,6 +191,8 @@ function oct(x){
  *  - noted that Math.pi is actually Math.PI (many hour mistake)
  *  - Took over 12 hours to make Sequencer work
  *    There is a bug where wavepot doesn't reload newly updated code elsewhere
+ * b:
+ *  - Changed .play to .simpleplay functions for Sequencers
  * 
  * v1.02:
  *  - Fixed comment on oct function. Sorry, cheery.
